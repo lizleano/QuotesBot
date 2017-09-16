@@ -50,8 +50,8 @@ def TweetOut(tweet):
 
 # Tweet a random quote
 
-for i in range(2):
+while (True):
 	TweetOut(happy_quotes)
 
 # Set timer to run every minute
-	time.sleep(10)
+	time.sleep(60)
