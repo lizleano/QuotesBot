@@ -20,14 +20,14 @@ happy_quotes = [
     # "The happiness of your life depends upon the quality of your thoughts. - Marcus Aurelius",
     # "Now and then it's good to pause in our pursuit of happiness and just be happy. - Guillaume Apollinaire"
     'If you want to achieve greatness stop asking for permission. ~Anonymous',
-'Things work out best for those who make the best of how things work out. ~John Wooden',
-'To live a creative life, we must lose our fear of being wrong. ~Anonymous',
-'If you are not willing to risk the usual you will have to settle for the ordinary. ~Jim Rohn',
-'Trust because you are willing to accept the risk, not because it’s safe or certain. ~Anonymous',
-'Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success. ~Swami Vivekananda',
-'All our dreams can come true if we have the courage to pursue them. ~Walt Disney',
-'Good things come to people who wait, but better things come to those who go out and get them. ~Anonymous',
-'If you do what you always did, you will get what you always got. ~Anonymous']
+	'Things work out best for those who make the best of how things work out. ~John Wooden',
+	'To live a creative life, we must lose our fear of being wrong. ~Anonymous',
+	'If you are not willing to risk the usual you will have to settle for the ordinary. ~Jim Rohn',
+	'Trust because you are willing to accept the risk, not because it’s safe or certain. ~Anonymous',
+	'Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success. ~Swami Vivekananda',
+	'All our dreams can come true if we have the courage to pursue them. ~Walt Disney',
+	'Good things come to people who wait, but better things come to those who go out and get them. ~Anonymous',
+	'If you do what you always did, you will get what you always got. ~Anonymous']
 
 # Create function for tweeting
 
@@ -39,8 +39,7 @@ def TweetOut(tweet):
 		auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 		auth.set_access_token(access_token, access_token_secret)
 		api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
-
-	    api.update_status(random.choice (tweets))	    
+		api.update_status(tweets)   
 
 		# Print success message
 		print("I twitted: %s" % strTweet)
@@ -51,8 +50,8 @@ def TweetOut(tweet):
 
 # Tweet a random quote
 
-while (True):
+for i in range(2):
 	TweetOut(happy_quotes)
 
 # Set timer to run every minute
-	time.sleep(60)
+	time.sleep(10)
