@@ -13,12 +13,6 @@ access_token_secret = "2MKRCLFHh82iv0gJGmVyritpvdH3NpkEx0ZQEwoxlngsE"
 
 # Quotes to Tweet
 happy_quotes = [
-    # "Folks are usually about as happy as they make their minds up to be. - Abraham Lincoln",
-    # "Happiness is when what you think, what you say, and what you do are in harmony. - Mahatma Gandhi",
-    # "Count your age by friends, not years. Count your life by smiles, not tears. - John Lennon",
-    # "Happiness is a warm puppy. - Charles M. Schulz",
-    # "The happiness of your life depends upon the quality of your thoughts. - Marcus Aurelius",
-    # "Now and then it's good to pause in our pursuit of happiness and just be happy. - Guillaume Apollinaire"
     'If you want to achieve greatness stop asking for permission. ~Anonymous',
 	'Things work out best for those who make the best of how things work out. ~John Wooden',
 	'To live a creative life, we must lose our fear of being wrong. ~Anonymous',
